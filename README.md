@@ -3,7 +3,8 @@ In this project, we are trying to implement supervised conditional generation on
 
 
 ## Best Image Results
-![](https://i.imgur.com/TKJmULF.gif)
+![](image/best.gif)
+
 
 ## Usage
 ### Training
