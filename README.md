@@ -107,23 +107,24 @@ From the following results, we can find generator with hidden concatenation cond
 
 | G without hidden condition| G with hidden condition|
 | :--------: | :--------: |
-| <img src="https://i.imgur.com/3k6DgVH.png" alt="drawing" height="130"/> |<img src="https://i.imgur.com/cwt4RCr.png" alt="drawing" height="130"/> |
+| <img src="https://i.imgur.com/3k6DgVH.png" alt="drawing" width="1000" height="130"/> |<img src="https://i.imgur.com/cwt4RCr.png" alt="drawing" width="1000" height="130"/> |
 
 With spectral normalization, we can obtain an impressive result, which is stable and without any explosion. However, the initial procedure of projection methods may see some disturbance due to the difficulty to learn specific condition information for adversarial loss.
 
 | D with SN layer | D with SN layer + projection|
 | :--------: | :--------: |
-| <img src="https://i.imgur.com/bGolb7D.png" alt="drawing" height="130"/> |<img src="https://i.imgur.com/Vk43EV1.png" alt="drawing" height="130"/> |
+| <img src="https://i.imgur.com/bGolb7D.png" alt="drawing" width="1000" height="130"/> |<img src="https://i.imgur.com/Vk43EV1.png" alt="drawing" width="1000"  height="130"/> |
 
 Using clipping techniques, we can see a stable but easily-converged result which may limit the learning procedure. Considering divergence techniques, it is better than clipping but with more disturbance. 
 
 | WG-CLIP | WG-DIV |
 | :--------: | :--------: |
-| <img src="https://i.imgur.com/PtIaG6h.png" alt="drawing" height="130"/> |<img src="https://i.imgur.com/psBkOiF.png" alt="drawing" height="130"/> |
+| <img src="https://i.imgur.com/PtIaG6h.png" alt="drawing" width="1000"  height="130"/> |<img src="https://i.imgur.com/psBkOiF.png" alt="drawing" width="1000" height="130"/> |
 
 ## FID Results
 
 The default setting for our stucture is using generator hidden concatenation condition and discriminator WG-GP adversarial loss.
+
 | | Default | without hidden | WG Clip | WG DIV | SN | SN+Proj |
 | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------: |
 |Epoch|300|200|400|500|450|800|
