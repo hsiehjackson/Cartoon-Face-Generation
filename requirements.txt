@@ -1,5 +1,5 @@
 matplotlib==2.1.0
-numpy==1.16.3
+numpy==1.22.0
 pandas==0.24.2
 Pillow==5.2.0
 tensorboard==1.13.1
